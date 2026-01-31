@@ -34,7 +34,7 @@ export const cartSlice = createSlice({
             state.cartItems = state.cartItems.filter((p) => p.id !== action.payload.id);
         }
 
-    },
+    }, 
 })
 
 // Action creators are generated for each case reducer function
