@@ -24,7 +24,7 @@ export const cartSlice = createSlice({
                     if (action.payload.key === 'quantity') {
                         p.attributes.price = p.oneQuantityPrice * action.payload.val;
                     }
-                    return { ...p, [action.payload.key]: action.payload.val };
+                    return { ...p, [action.payload.key]: action.payload.val }; 
                 }
                 return p;
             })
